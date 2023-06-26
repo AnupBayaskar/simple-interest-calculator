@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div>
+    Simple Interest Calculator
+    <a href="https://instagram.com/anup_bayaskar?igshid=MzRIODBiNWFIZA==">Follow Me</a>
+   </div>
+   <div class="d-flex justify-content-center mt-5">
+    
+    <form action="">
+        <input id="Amount" type="number" placeholder="Principal Amount (Rs.)">
+        <input id="Month" type="number" placeholder="Month">
+        <input id="Rateofinterest" type="number" placeholder="Rate of interest">
+         <input class="text-bg-danger" type="button" onclick="solve()" value="solve">
+    </form>  
+   </div>
+ 
+<span id="ans"></span>
+
+<script>
+    function solve(){
+        let a = document.getElementById("Amount").value;
+    
+        let m = document.getElementById("Month").value;
+    
+        let r = document.getElementById("Rateofinterest").value;
+    
+        let total = a * m * r / 100
+        document.getElementById('ans').innerHTML = total;
+        
+    }
+   
+</script>
+</body>
+</html>
